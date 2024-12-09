@@ -16,7 +16,7 @@ print(ma_variable)
 
 # types numériques : 
 var = 23
-var = 23.5
+var = 23
 print(type(var))
 
 # types chaine de carac
@@ -26,3 +26,20 @@ print(type(var))
 #type booléens:
 var = True
 var = False
+
+# récuprer une variable
+nb_a = input("Veuillez saisir une valeur: ")
+print("le nombre est: ",nb_a)
+
+# cast de variable
+nb = int(nb_a)
+print(type(nb))
+
+# cast et input au m temps
+nb_b = int (input("Veuillez saisir une valeur: "))
+
+# formater une phrase
+print(f"le nombre a est: {nb_a:^7.2f}, le nombre b est: {nb_b:^7.2f}")
+
+
+
