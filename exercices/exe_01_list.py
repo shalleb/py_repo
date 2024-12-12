@@ -28,10 +28,10 @@ def saisie_notes():
     liste_notes=[]
     while True:
         note = (int(input(f"Veuillez entrer une note entre 0 et 20 compris (une note négtaive stoppera la saisie): ")))
-        while note < 20:
+        if note < 20:
             liste_notes.append(note)
-        if (note < 0) :
-            liste_notes.remove(note)
+            if (note < 0) :
+                liste_notes.remove(note)
         break
         
     print(liste_notes)
